@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Ahumado - Reservas</title>
+    <style>
+        /* fuente y reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Georgia', serif;
+        }
+
+        body {
+            background: linear-gradient(to bottom, #3e2c23, #5c4231);
+            color: #f5f0e6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #f5e0c9;
+            text-shadow: 2px 2px #2a1e18;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #e0d4c0;
+        }
+
+        main {
+            width: 90%;
+            max-width: 600px;
+            background-color: rgba(60, 40, 30, 0.9);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 40px 0;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+
+        main h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #f5e0c9;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #f5e0c9;
+        }
+
+        input, select, textarea {
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            font-size: 1rem;
+        }
+
+        input[type="submit"] {
+            background-color: #a26b4f;
+            color: #f5f0e6;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #8a523b;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #c9b8a6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Café Ahumado</h1>
+        <p>Tu refugio cálido en San Martín de los Andes</p>
+    </header>
+
+    <main>
+        <h2>Reservá tu experiencia</h2>
+        <form action="mailto:tuemail@dominio.com" method="post" enctype="text/plain">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="fecha">Fecha de reserva:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" required>
+
+            <label for="tipo">Tipo de fogón:</label>
+            <select id="tipo" name="tipo">
+                <option value="individual">Individual</option>
+                <option value="comunitario">Comunitario</option>
+            </select>
+
+            <label for="comentarios">Comentarios adicionales:</label>
+            <textarea id="comentarios" name="comentarios" rows="4" placeholder="Si querés algo especial..."></textarea>
+
+            <input type="submit" value="Reservar ahora">
+        </form>
+    </main>
+
+    <footer>
+        &copy; 2025 Café Ahumado - Todos los derechos reservados
+    </footer>
+</body>
+</html>
