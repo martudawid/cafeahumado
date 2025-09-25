@@ -127,10 +127,10 @@
             box-shadow: 0 0 30px rgba(0,0,0,0.5);
             position: relative;
             z-index: 1;
-            text-align: center; /* centramos todo el texto */
         }
 
         main h2 {
+            text-align: center;
             margin-bottom: 30px;
             color: #f5e0c9;
             font-size: 2rem;
@@ -182,20 +182,6 @@
         input:focus, select:focus, textarea:focus {
             outline: none;
             box-shadow: 0 0 10px #c9b8a6;
-        }
-
-        /* video */
-        .video-container {
-            margin-top: 30px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .video-container video {
-            width: 100%;
-            max-width: 600px;
-            border-radius: 15px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
         }
 
         @media(max-width: 480px){
@@ -254,19 +240,12 @@
 
     <main id="about">
         <h2>Sobre Nosotros</h2>
-        <p>Café Ahumado es un refugio cálido en medio de la montaña. Disfrutá de un espacio acogedor, con fogones que invitan a compartir y una selección de cafés y pastelería artesanal.</p>
+        <p style="color:#e0d4c0;">Café Ahumado es un refugio cálido en medio de la montaña. Disfrutá de un espacio acogedor, con fogones que invitan a compartir y una selección de cafés y pastelería artesanal.</p>
     </main>
 
     <main id="contact">
         <h2>Contacto</h2>
-        <p>Email: info@cafeahumado.com<br>Teléfono: +54 123 456 7890</p>
-
-        <div class="video-container">
-            <video controls>
-                <source src="videoahumado.mp4" type="video/mp4">
-                Tu navegador no soporta la reproducción de video.
-            </video>
-        </div>
+        <p style="color:#e0d4c0;">Email: info@cafeahumado.com<br>Teléfono: +54 123 456 7890</p>
     </main>
 
     <footer>
@@ -275,6 +254,7 @@
 
     <!-- Nieve -->
     <script>
+        // generar 50 copos de nieve
         for(let i=0;i<50;i++){
             let snow = document.createElement('div');
             snow.classList.add('snowflake');
