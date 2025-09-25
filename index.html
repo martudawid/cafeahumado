@@ -189,6 +189,20 @@
             main { padding: 30px 20px; }
             nav ul { gap: 15px; }
         }
+
+        .video-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.video-container video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
     </style>
 </head>
 <body>
@@ -247,6 +261,17 @@
         <h2>Contacto</h2>
         <p style="color:#e0d4c0;">Email: info@cafeahumado.com<br>Teléfono: +54 123 456 7890</p>
     </main>
+
+    <main id="video">
+    <h2>Café Ahumado</h2>
+    <div class="video-container">
+        <video controls>
+            <source src="videoahumado.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video.
+        </video>
+    </div>
+</main>
+
 
     <footer>
         &copy; 2025 Café Ahumado - Todos los derechos reservados
